@@ -5,9 +5,9 @@
 Contents
 
 Context	
-Part 1: Train your model
-Part 2: Create an index	
-Part 3: Connect to a frontend
+-Part 1: Train your model
+-Part 2: Create an index	
+-Part 3: Connect to a frontend
 
 
 
