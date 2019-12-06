@@ -10,7 +10,7 @@ Create a Custom Vision project and train the model on your images
 -	Click on Sign in. 
 -	Log in with your company’s credentials (that are linked to Azure).	 
 
-![](.media/Part 1/1.png =250x)
+<img src="/media/Part%201/1.png" alt="drawing" width="200"/>
 
 When this pop-up appears during the log-in:
 -	Make sure to check the box to agree, after you read the agreement and terms. 
