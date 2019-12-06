@@ -1,7 +1,5 @@
 # Image-Classification-App
 
-# Context
-
 
 ### Why an image classifier app?
 
