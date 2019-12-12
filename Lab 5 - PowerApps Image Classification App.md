@@ -92,4 +92,48 @@ We have all we need for now so let’s add the second thing we need: a button.
 A button has been added to your app. You can also drag this to where you want it to be positioned in the app. Notice that now you have selected the button, the pane on the right shows what you can do with this button as well as it did with the add picture box. 
 -	In the right pane, while having selected button, change the text from Button to ‘Analyze image’.  	 
 
+<img src="/media/lab%205/642.png" alt="drawing" width="800"/>
+
+As a Next step, we will build the logic around our app. Click on the Button ' Analyze image' and go the the Formula bar. Enter the following function:
+
+ClearCollect(resultprediction,CustomVision.PredictImage("<Project-Id>",UploadedImage1.Image,{iterationId:"Iteration-ID"}).Predictions)
+
 <img src="/media/lab%205/65.png" alt="drawing" width="800"/>
+
+This function will create a collection (of data), named resultprediction. The collection stores the output of an CustomVision.PredictImage function. The only thing we need to fill in is the project id (to point to the right CustomVision Project) and the Iteration ID (to point to the right 'version' of the model)
+
+Make sure to verify if the UploadedImage1 has the same name as the object in PowerApps
+
+As a Last step we will add a Data Table to visualize the data from the resultprediction collection:
+
+Click Insert - Data Table
+
+<img src="/media/lab%205/66.png" alt="drawing" width="800"/>
+
+Select Data Source, choose the resultsprediction
+
+<img src="/media/lab%205/67.png" alt="drawing" width="800"/>
+
+
+Now we click on add fields: 
+We can select the fields/columns we would like to visualize. 
+-Choose the Tag and Probability
+
+<img src="/media/lab%205/68.png" alt="drawing" width="800"/>
+
+
+All Done, we now have build an app that can upload an image, classify if its a cat1/cat2, and bring back the results in the app.
+
+<img src="/media/lab%205/69.png" alt="drawing" width="800"/>
+
+
+We can test it by clicking the play symbol in the right corner:
+
+<img src="/media/lab%205/70.png" alt="drawing" width="800"/>
+
+
+Spend the remaining time to improve your app visually (logo/texts/alignment)
+
+
+
+
